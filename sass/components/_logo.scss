@@ -1,0 +1,21 @@
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo-img{
+        width: 65px;
+        height: 70px;
+        margin-bottom: 0;
+    } 
+    a{
+        text-align: center;
+    }
+}
+
+.logo-text{
+    font-family: "Permanent Marker";
+    font-size: 9px;
+    margin-top: 0;
+    color: $text-color;
+}

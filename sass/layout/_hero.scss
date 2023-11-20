@@ -1,0 +1,33 @@
+.hero{
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/bgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    flex-direction: column;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    @media screen and (min-width:1024px) {
+        height: 700px;
+        background-attachment: fixed;
+    }
+}
+.hero h2{
+    font-family: "Permanent Marker";
+    color: $text-color;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    animation: fadeInDown;
+    animation-duration: 2s;
+    @media screen and (min-width:768px) {
+        font-size: 60px;
+    }
+}
+
+

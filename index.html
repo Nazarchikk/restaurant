@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miglior ristorante</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300;400;500&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+</head>
+<body>
+    <!-- =================================== HEADER =================================== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img class="logo-img" src="./images/logo.png" alt="logo">
+                    <p class="logo-text">Miglior ristorante</p>
+                </a>
+            </div>
+            <div class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <ul class="menu">
+                    <li><a class="menu-link" href="#about-food">Про нашу їжу</a></li>
+                    <li><a class="menu-link" href="#about-us">Про нас</a></li>
+                    <li><a class="menu-link" href="#download">Завантажити меню</a></li>
+                    <li><a class="menu-link" href="#reservations">Резервації</a></li>
+                    <li><a class="menu-link" href="./our-team.html">Наша команда</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- ===================================== HERO ===================================== -->
+        <section class="hero">
+            <h2 class="">Miglior ristorante.</h2>
+        </section>
+        <!-- ===================================== ABOUT FOOD SECTION ===================================== -->
+        <section class="about-food" id="about-food">
+            <div class="about-food-box">
+                <div class="about-food-item">
+                    <div class="aboud-food-text">
+                        <h2>Про нашу їжу</h2>
+                        <p>
+                        Наша їжа створюється руками найкращих шеф-кухарів України, а продукти з яких ми творимо нашу їжу найвищого гатунку. Не знайдеться гурмана який би не був задоволений наповненням нашого меню, там є все від італьянської пасти до японських суші.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-food-item">
+                    <div class="about-food-bg">
+                        <h2 class="about-food-bg-heading">Приклад нашої роботи</h2>
+                    </div>
+                </div>
+                <div class="about-food-item">
+                    <div class="about-food-bg2">
+                        <h2 class="about-food-bg-heading">Приклад нашої роботи</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===================================== ABOUT US SECTION ===================================== -->
+        <section class="about-us" id="about-us">
+            <div class="about-us-box">
+                <div class="about-us-item">
+                    <div class="about-us-bg">
+                        <h2 class="about-us-bg-heading">Приклад нашої роботи</h2>
+                    </div>
+                </div>
+                <div class="about-us-item">
+                    <div class="about-us-bg2">
+                        <h2 class="about-us-bg-heading">Приклад нашої роботи</h2>
+                    </div>
+                </div>            
+                <div class="about-us-item">
+                    <div class="about-us-text">
+                        <h2>Про нас</h2>
+                        <p>
+                          Ми 1 з найпопулярніших ресторанів України. Мова про нас йде навіть за її межі, і не просто так. Наш ресторан навіть має зірку Мішлен.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===================================== DOWNLOAD MENU ===================================== -->
+        <section class="download" id="download">
+            <h2>Завантажте наше меню ось тут:</h2>
+            <a  href="./menu.pdf" download="menu">Завантажити меню</a>
+        </section>
+        <!-- ===================================== RESERVATIONS ===================================== -->
+        <section class="section5" id="reservations">
+            <div class="div-section5">
+                <div class="div2-section5">
+                    <h2 class="reserve-h2">Замовлення столу</h2>
+                    <div class="reserve-input">
+                        <input type="date" id="date" name="trip-start" value="2022-11-01" min="2022-11-01" max="2022-12-31">
+                        <input type="time" id="time" name="appt" min="09:00" max="21:00" required>
+                        <select name="Party size" id="list">
+                            <option value="">Кількість місць</option>
+                            <option value="">на 1 місце</option>
+                            <option value="">на 2 місця</option>
+                            <option value="">на 3 місця</option>
+                            <option value="">на 4 місця</option>
+                            <option value="">на 5 місць</option>
+                            <option value="">на 6 місць</option>
+                        </select>
+                        
+                        <a class="reservenow" href="#win1">Забронювати зараз</a>
+                        <a href="#x" class="overlay" id="win1"></a>
+                        <div class="popup">
+                            <img src="./images/phone.png" alt="phone-img">
+                            <h2>Наразі ми не приймаємо бронювання онлайн.</h2>
+                            <h5>Для завершення бронювання зателефонуйте, будь ласка, за номером: (800)-555-1111</h5>
+                            <a class="close" title="Закрыть" href="#close">OK</a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ===================================== FOOTER ===================================== -->
+    <footer class="footer">
+        <div class="div-footer">
+            <div class="logo">
+                <img class="logo-img" src="./images/logo.png" alt="logo">
+                <p class="logo-text">Miglior ristorante</p>
+            </div>
+            <div class="div2-footer">
+                <ul class="ul-footer">
+                    <li class="li-footer">Час роботи:</li>
+                    <li class="li-footer">Будні 8:00-22:00</li>
+                    <li class="li-footer">Вихідні 10:00-20:00</li>
+                </ul>
+                <div class="div3-footer">
+                    <p class="social-networks-footer">Соц-мережі:</p>
+                    <ul class="ul-svg-footer">
+                        <li class="li-svg-footer">
+                            <svg class="svg-footer">
+                                <use href="./sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </li>
+                        <li class="li-svg-footer">
+                            <svg class="svg-footer">
+                                <use href="./sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </li>
+                        <li class="li-svg-footer">
+                            <svg class="svg-footer">
+                                <use href="./sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3 class="copyright">2022 Miglior ristorante</h3>
+    </footer>
+
+</body>
+</html>

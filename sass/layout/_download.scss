@@ -1,0 +1,32 @@
+.download{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    background-color: $color-primary;
+}
+.download h2{
+    margin-bottom: 15px;
+    color: $text-color;
+    font-family: "Roboto";
+    font-size: 40px;
+    text-align: center;
+}
+.download a{
+    font-size: 18px;
+    padding: 10px;
+    background-color: $button-color;
+    border: 1px solid $button-color;
+    border-radius: 10px;
+    color: $text-color;
+    font-family: "Roboto";
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+    &:hover{
+        box-shadow: 0 5px 15px 5px #000000;
+        transform: translateY(-3px);
+    }
+}

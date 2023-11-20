@@ -1,0 +1,28 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+body {
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    overflow-x: hidden;
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+a {
+    text-decoration: none;
+}
